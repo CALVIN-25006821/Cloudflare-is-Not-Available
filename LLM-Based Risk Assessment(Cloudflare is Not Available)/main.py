@@ -7,12 +7,12 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
-# --- 1. 设置环境 ---
+# --- 1. Setup Environment ---
 load_dotenv() 
 
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
-    print("❌ 警告: 没有找到 API Key")
+    print("❌ WARNING: API Key not found")
 else:
     genai.configure(api_key=api_key)
 
@@ -20,13 +20,13 @@ llm_model = genai.GenerativeModel('gemini-1.5-flash', generation_config={"respon
 
 try:
     rf_model = joblib.load("baseline_model_rf.pkl")
-    print("✅ 数字模型加载成功！")
+    print("✅ Numeric model loaded successfully!")
 except:
-    print("❌ 错误: 找不到 baseline_model_rf.pkl")
+    print("❌ ERROR: baseline_model_rf.pkl not found")
     rf_model = None
 
 # ==========================================
-# 👇👇👇 关键在这里！必须叫 app 👇👇👇
+# 👇👇👇 Key Point! Must be named app 👇👇👇
 app = FastAPI(title="Xenber AI Credit Scoring")
 # ==========================================
 
