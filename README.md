@@ -29,6 +29,7 @@ Deliverables:
 • Google Colab notebook
 
 
+
 Work Summary:
 
 • Preprocess raw credit dataset
@@ -54,6 +55,7 @@ Deliverables:
 • text_features.csv
 
 
+
 Work Summary:
 
 • Generate synthetic loan-purpose descriptions
@@ -75,6 +77,7 @@ Deliverables:
 • final_model.pkl
 
 
+
 Work Summary:
 
 • Merge structured + text features
@@ -92,6 +95,7 @@ Work Summary:
 Deliverables:
 
 • app.py (Streamlit app)
+
 
 
 Work Summary:
@@ -115,6 +119,7 @@ Deliverables:
 • Architecture diagrams
 
 • Presentation script
+
 
 
 Work Summary:
