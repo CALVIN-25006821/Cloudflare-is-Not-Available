@@ -132,23 +132,19 @@ Work Summary:
 
 ---
 
-
 🏛️ System Architecture
 
-User (Streamlit UI)
-   │
-   ▼
-FastAPI Backend
-   │
-   ├──▶ Random Forest Model (Structured Risk)
-   │
-   └──▶ LLM (Gemini/OpenAI) Text Analysis (Behavioural Risk)
-            │
-            ▼
-       Fusion Layer (70% ML + 30% LLM)
-              │
-              ▼
-   Final Risk Score + Explanation
+• User (Streamlit UI)
+
+• FastAPI Backend
+
+-> Random Forest Model – Structured Risk
+
+-> LLM (Gemini/OpenAI) – Text Analysis (Behavioural Risk)
+
+• Fusion Layer – 70% ML + 30% LLM
+
+• Final Risk Score + Explanation
 
 
 ---
