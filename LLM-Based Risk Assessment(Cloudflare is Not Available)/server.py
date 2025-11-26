@@ -1,3 +1,12 @@
+"""
+FILENAME: server.py
+PURPOSE: Flask-based web server and API (Alternative/Legacy).
+DESCRIPTION:
+    - Provides a web interface (serving `index.html`) for users to interact with the system.
+    - Exposes a `/predict` endpoint similar to `main.py` but using Flask.
+    - Calls `risk_engine.py` to perform the actual risk assessment.
+    - Handles request parsing and error formatting for the web UI.
+"""
 from flask import Flask, request, jsonify, render_template
 from risk_engine import get_total_risk
 
