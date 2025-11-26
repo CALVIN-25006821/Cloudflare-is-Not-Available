@@ -28,7 +28,7 @@ Deliverables:
 
 • Google Colab notebook
 
-
+<br>
 
 Work Summary:
 
@@ -54,7 +54,7 @@ Deliverables:
 
 • text_features.csv
 
-
+<br>
 
 Work Summary:
 
@@ -76,7 +76,7 @@ Deliverables:
 
 • final_model.pkl
 
-
+<br>
 
 Work Summary:
 
@@ -96,7 +96,7 @@ Deliverables:
 
 • app.py (Streamlit app)
 
-
+<br>
 
 Work Summary:
 
@@ -121,7 +121,7 @@ Deliverables:
 • Presentation script
 
 
-
+<br>
 Work Summary:
 
 • Create system diagrams
@@ -135,6 +135,7 @@ Work Summary:
 🏛️ System Architecture
 
 • User (Streamlit UI)
+<br>
 
 • FastAPI Backend
 
@@ -158,7 +159,7 @@ Step 1 — Data Generation & Cleaning
 • Feature engineering
 
 • Missing value handling
-
+<br>
 
 
 Step 2 — Baseline ML (Calvin)
@@ -168,7 +169,7 @@ Step 2 — Baseline ML (Calvin)
 • Evaluate
 
 • Export .pkl models
-
+<br>
 
 
 Step 3 — LLM Text Extraction (Kah Lok)
@@ -178,7 +179,7 @@ Step 3 — LLM Text Extraction (Kah Lok)
 • Extract text-based behavioural features
 
 • Generate text_features.csv
-
+<br>
 
 
 Step 4 — Fusion Model (Kang Shi)
@@ -188,7 +189,7 @@ Step 4 — Fusion Model (Kang Shi)
 • Train final model
 
 • SHAP interpretability
-
+<br>
 
 
 Step 5 — FastAPI Backend
@@ -200,7 +201,7 @@ Step 5 — FastAPI Backend
 • Calls LLM
 
 • Returns final score + explanation
-
+<br>
 
 
 Step 6 — Streamlit Dashboard
@@ -210,7 +211,7 @@ Step 6 — Streamlit Dashboard
 • Calls backend
 
 • Displays prediction + charts
-
+<br>
 
 
 ---
@@ -280,7 +281,7 @@ Score ≤ 0.5 → APPROVE
 📄 cleaned_data.csv – Preprocessed dataset
 
 📄 text_features.csv – Extracted text features
-
+<br>
 
 📁 models/ – Saved machine learning models
 
@@ -289,19 +290,19 @@ Score ≤ 0.5 → APPROVE
 📄 baseline_model_rf.pkl – Random Forest baseline
 
 📄 final_model.pkl – Final tuned model
-
+<br>
 
 📁 backend/ – FastAPI backend code
 
 📄 main.py – API entry point
 
 📄 risk_engine.py – Core risk assessment logic
-
+<br>
 
 📁 ui/ – User interface
 
 📄 app.py – Frontend (Streamlit/FastAPI)
-
+<br>
 
 📁 notebooks/ – Jupyter notebooks for experimentation
 
@@ -312,7 +313,7 @@ Score ≤ 0.5 → APPROVE
 📄 fusion_model.ipynb – ML + LLM fusion experiments
 
 📄 README.md – Project documentation
-
+<br>
 
 ---
 
