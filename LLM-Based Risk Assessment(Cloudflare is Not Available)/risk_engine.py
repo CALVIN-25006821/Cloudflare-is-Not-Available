@@ -1,3 +1,13 @@
+"""
+FILENAME: risk_engine.py
+PURPOSE: Core logic for the Hybrid AI Credit Scoring System.
+DESCRIPTION:
+    - Implements the `get_total_risk` function.
+    - Loads the Random Forest model ("Math Brain") for structured data analysis.
+    - Configures and uses Google Gemini ("Text Brain") for analyzing user stories.
+    - Includes a robust fallback mechanism (keyword analysis) if the LLM API is unavailable.
+    - Fuses the scores from both "brains" (70% Math, 30% Text) to produce a final risk score.
+"""
 import pandas as pd
 import joblib
 import os
