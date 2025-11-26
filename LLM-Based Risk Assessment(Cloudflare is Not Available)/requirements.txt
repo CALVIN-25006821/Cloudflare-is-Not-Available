@@ -1,9 +1,10 @@
-fastapi
-uvicorn
-python-dotenv
-google-generativeai
-pandas
-numpy
-scikit-learn
-joblib
-pydanticflask
+fastapi   #Used in main.py for the modern API.
+uvicorn   #Used in main.py for the modern API.
+python-dotenv   #Used in main.py for the modern API.
+google-generativeai   #Used in risk_engine.py for the modern API.
+pandas   #Used in main.py for the modern API.
+numpy   #Used in main.py for the modern API.
+scikit-learn   #Used in train_model.py for the modern API.
+joblib   #Used in train_model.py for the modern API.
+pydantic   #Used in main.py for the modern API.
+flask   #Used in main.py for the modern API.
