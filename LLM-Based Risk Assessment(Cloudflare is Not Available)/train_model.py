@@ -1,3 +1,14 @@
+"""
+FILENAME: train_model.py
+PURPOSE: Data generation and model training pipeline.
+DESCRIPTION:
+    - Generates a synthetic dataset representing Malaysian loan applicants.
+    - Performs data cleaning and feature selection.
+    - Trains a Logistic Regression model (baseline).
+    - Trains a Random Forest Classifier (primary "Math Brain").
+    - Evaluates model performance (AUC, F1 Score).
+    - Saves the trained models (.pkl) and the cleaned dataset (.csv) for use by the Risk Engine.
+"""
 # ================================
 # STEP 0: Import Libraries
 # ================================
