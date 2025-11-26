@@ -159,6 +159,7 @@ Step 1 — Data Generation & Cleaning
 • Missing value handling
 
 
+
 Step 2 — Baseline ML (Calvin)
 
 • Train LR + RF
@@ -166,6 +167,7 @@ Step 2 — Baseline ML (Calvin)
 • Evaluate
 
 • Export .pkl models
+
 
 
 Step 3 — LLM Text Extraction (Kah Lok)
@@ -177,6 +179,7 @@ Step 3 — LLM Text Extraction (Kah Lok)
 • Generate text_features.csv
 
 
+
 Step 4 — Fusion Model (Kang Shi)
 
 • Merge datasets
@@ -184,6 +187,7 @@ Step 4 — Fusion Model (Kang Shi)
 • Train final model
 
 • SHAP interpretability
+
 
 
 Step 5 — FastAPI Backend
@@ -195,6 +199,7 @@ Step 5 — FastAPI Backend
 • Calls LLM
 
 • Returns final score + explanation
+
 
 
 Step 6 — Streamlit Dashboard
@@ -264,37 +269,49 @@ Score > 0.5 → REJECT
 Score ≤ 0.5 → APPROVE
 
 
-
 ---
 
 📂 Folder Structure
 
+
 📁 data/ – Contains datasets
 
 📄 cleaned_data.csv – Preprocessed dataset
+
 📄 text_features.csv – Extracted text features
+
 
 📁 models/ – Saved machine learning models
 
 📄 baseline_model_lr.pkl – Logistic Regression baseline
+
 📄 baseline_model_rf.pkl – Random Forest baseline
+
 📄 final_model.pkl – Final tuned model
+
 
 📁 backend/ – FastAPI backend code
 
 📄 main.py – API entry point
+
 📄 risk_engine.py – Core risk assessment logic
+
 
 📁 ui/ – User interface
 
 📄 app.py – Frontend (Streamlit/FastAPI)
 
+
 📁 notebooks/ – Jupyter notebooks for experimentation
 
 📄 structured_data.ipynb – Structured data analysis
+
 📄 text_analysis.ipynb – NLP/text feature analysis
+
 📄 fusion_model.ipynb – ML + LLM fusion experiments
+
 📄 README.md – Project documentation
+
 
 ---
 
