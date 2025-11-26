@@ -267,33 +267,34 @@ Score ≤ 0.5 → APPROVE
 
 ---
 
-📁 Folder Structure
+📂 Folder Structure
 
-/project
-│
-├── data/
-│   ├── cleaned_data.csv
-│   └── text_features.csv
-│
-├── models/
-│   ├── baseline_model_lr.pkl
-│   ├── baseline_model_rf.pkl
-│   └── final_model.pkl
-│
-├── backend/
-│   ├── main.py
-│   └── risk_engine.py
-│
-├── ui/
-│   └── app.py
-│
-├── notebooks/
-│   ├── structured_data.ipynb
-│   ├── text_analysis.ipynb
-│   └── fusion_model.ipynb
-│
-└── README.md
+📁 data/ – Contains datasets
 
+📄 cleaned_data.csv – Preprocessed dataset
+📄 text_features.csv – Extracted text features
+
+📁 models/ – Saved machine learning models
+
+📄 baseline_model_lr.pkl – Logistic Regression baseline
+📄 baseline_model_rf.pkl – Random Forest baseline
+📄 final_model.pkl – Final tuned model
+
+📁 backend/ – FastAPI backend code
+
+📄 main.py – API entry point
+📄 risk_engine.py – Core risk assessment logic
+
+📁 ui/ – User interface
+
+📄 app.py – Frontend (Streamlit/FastAPI)
+
+📁 notebooks/ – Jupyter notebooks for experimentation
+
+📄 structured_data.ipynb – Structured data analysis
+📄 text_analysis.ipynb – NLP/text feature analysis
+📄 fusion_model.ipynb – ML + LLM fusion experiments
+📄 README.md – Project documentation
 
 ---
 
