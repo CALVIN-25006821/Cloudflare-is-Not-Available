@@ -1,3 +1,14 @@
+"""
+FILENAME: main.py
+PURPOSE: This is the main entry point for the FastAPI backend.
+DESCRIPTION:
+    - Sets up the FastAPI application.
+    - Loads environment variables and the Gemini API key.
+    - Loads the pre-trained Random Forest model (baseline_model_rf.pkl).
+    - Defines the data model for credit requests.
+    - Exposes the `/predict` endpoint to handle credit risk assessments.
+    - Combines the numeric model score with the LLM-based text analysis.
+"""
 import os
 import json
 import joblib
