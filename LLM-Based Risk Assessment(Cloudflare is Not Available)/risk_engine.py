@@ -16,7 +16,7 @@ import google.generativeai as genai
 # 1. Load your teammate's "Math Brain"
 try:
     rf_model = joblib.load("baseline_model_rf.pkl")
-    print("✅model loaded!")
+    print("✅ model loaded!")
 except Exception as e:
     print(f"❌ Model not found: {e}")
     print("Please run train_model.py first to generate the model.")
