@@ -1,18 +1,93 @@
 # Cloudflare-is-Not-Available
 
-🚀 Xenber AI — Hybrid LLM & ML Credit Scoring System
+# Hybrid AI Credit Scoring System
 
-A full-stack intelligent credit-risk assessment system combining:
+This project uses a hybrid approach to assess credit risk, combining a *Random Forest model* (Math Brain) for structured financial data and *Google Gemini* (Text Brain) for analyzing unstructured user stories.
 
-• Machine Learning (Random Forest) for structured financial data
+## 🚀 Step-by-Step Setup Guide
 
-• LLM (Gemini / OpenAI) for text-based behavioural insights
+Follow these instructions to get the project running on your local machine.
 
-• Fusion Model that merges both signals for fairer and more explainable scoring
+### 1. Prerequisites
+- Python 3.9 or higher
+- A Google Gemini API Key (Get one [here](https://aistudio.google.com/app/apikey))
 
-• FastAPI Backend for model serving
+### 2. Set up the Environment
 
-• Streamlit Dashboard for real-time predictions
+1.  *Clone/Download* this repository.
+2.  *Create a Virtual Environment* (recommended to keep dependencies isolated):
+    bash
+    python3 -m venv .venv
+    source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+    
+3.  *Install Dependencies*:
+    bash
+    pip install -r requirements.txt
+    
+
+### 3. Configure API Key
+
+1.  Create a file named .env in the root directory.
+2.  Add your Gemini API key to it:
+    env
+    GEMINI_API_KEY=your_actual_api_key_here
+    
+
+### 4. Train the Model (The "Math Brain")
+
+Before running the app, you need to generate the machine learning model.
+
+1.  Run the training script:
+    bash
+    python train_model.py
+    
+2.  *What happens:*
+    - Generates synthetic Malaysian loan data.
+    - Trains a Random Forest model.
+    - Saves baseline_model_rf.pkl (The Model) and cleaned_data.csv (The Data).
+    - You should see "✅ All done!" when finished.
+
+### 5. Run the Application
+
+You have two options to run the system:
+
+#### Option A: Interactive Dashboard (Streamlit) - *RECOMMENDED*
+This is the user-friendly web interface.
+
+1.  Run the app:
+    bash
+    streamlit run app.py
+    
+2.  Open your browser at the URL shown (usually http://localhost:8501).
+3.  Enter applicant details and a story to see the AI assessment.
+
+#### Option B: Backend API (FastAPI)
+If you want to use the system as a REST API for other apps.
+
+1.  Start the server:
+    bash
+    uvicorn main:app --reload
+    
+2.  Access the API documentation at http://127.0.0.1:8000/docs.
+
+## 📂 Project Structure
+
+- *app.py*: The frontend dashboard (Streamlit).
+- *risk_engine.py*: The core logic combining Math + Text models.
+- *train_model.py*: Generates data and trains the Random Forest model.
+- *main.py*: The backend API (FastAPI).
+- *requirements.txt*: List of Python libraries needed.
+- *baseline_model_rf.pkl*: The saved "Math Brain" model.
+
+▶️ How to Run
+
+• Run backend
+
+• uvicorn main:app --reload
+
+• Run Streamlit
+
+• streamlit run app.py
 
 ---
 
@@ -314,39 +389,6 @@ Score ≤ 0.5 → APPROVE
 
 📄 README.md – Project documentation
 <br>
-
----
-
-⚙️ Installation
-
-pip install -r requirements.txt
-
-requirements.txt
-
-fastapi
-uvicorn
-python-dotenv
-google-generativeai
-pandas
-numpy
-scikit-learn
-joblib
-pydantic
-streamlit
-
-
----
-
-▶️ How to Run
-
-• Run backend
-
-• uvicorn main:app --reload
-
-• Run Streamlit
-
-• streamlit run app.py
-
 
 ---
 
