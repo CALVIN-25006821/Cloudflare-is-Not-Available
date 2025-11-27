@@ -1,10 +1,16 @@
-fastapi   #Used in main.py for the modern API.
-uvicorn   #Used in main.py for the modern API.
-python-dotenv   #Used in main.py for the modern API.
-google-generativeai   #Used in risk_engine.py for the modern API.
-pandas   #Used in main.py for the modern API.
-numpy   #Used in main.py for the modern API.
-scikit-learn   #Used in train_model.py for the modern API.
-joblib   #Used in train_model.py for the modern API.
-pydantic   #Used in main.py for the modern API.
-flask   #Used in main.py for the modern API.
+fastapi               # Web framework for the modern API (main.py)
+uvicorn               # ASGI server to run the FastAPI application
+python-dotenv         # Loads environment variables (API keys) from .env file
+google-generativeai   # Google Gemini SDK for LLM-based text analysis
+pandas                # Data manipulation and analysis (DataFrames)
+numpy                 # Numerical computing and array operations
+scikit-learn          # Machine learning library (Random Forest, Logistic Regression)
+joblib                # Utilities for saving and loading trained models (.pkl)
+pydantic              # Data validation and settings management for FastAPI
+flask                 # Web framework for the legacy server (server.py)
+streamlit             # Interactive dashboard framework for the frontend (app.py)
+fpdf                  # Library for generating PDF reports
+Pillow                # Image processing library (PIL) for the dashboard
+altair                # Declarative statistical visualization library for charts
+typing_extensions     # Backport of new type hinting features (dependency)
+threadpoolctl         # Thread-pool controls (dependency for scikit-learn)
