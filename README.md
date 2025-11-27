@@ -56,7 +56,7 @@ This is the user-friendly web interface.
 
 1.  Run the app:
     bash
-    streamlit run app.py
+    ./.venv/bin/streamlit run app.py
     
 2.  Open your browser at the URL shown (usually http://localhost:8501).
 3.  Enter applicant details and a story to see the AI assessment.
