@@ -1,3 +1,13 @@
+"""
+FILENAME: app.py
+PURPOSE: Interactive Streamlit Dashboard (Frontend).
+DESCRIPTION:
+    - Provides a user-friendly web interface for the Credit Scoring System.
+    - Allows users to input applicant details and loan stories.
+    - Visualizes the risk assessment results (Math Score vs. Text Score).
+    - Generates downloadable PDF reports and summary images.
+    - Maintains a session history of recent assessments.
+"""
 import streamlit as st
 import pandas as pd
 from dotenv import load_dotenv
