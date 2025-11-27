@@ -110,7 +110,7 @@ Work Summary:
 
 ---
 
-5. Prescilia Cheong Ee Cheng — Documentation Lead
+5. Priscilia Cheong Ee Cheng — Documentation Lead
 
 Deliverables:
 
@@ -162,7 +162,7 @@ Step 1 — Data Generation & Cleaning
 <br>
 
 
-Step 2 — Baseline ML (Calvin)
+Step 2 — Baseline ML
 
 • Train LR + RF
 
@@ -172,7 +172,7 @@ Step 2 — Baseline ML (Calvin)
 <br>
 
 
-Step 3 — LLM Text Extraction (Kah Lok)
+Step 3 — LLM Text Extraction 
 
 • Gemini prompts
 
@@ -182,7 +182,7 @@ Step 3 — LLM Text Extraction (Kah Lok)
 <br>
 
 
-Step 4 — Fusion Model (Kang Shi)
+Step 4 — Fusion Model 
 
 • Merge datasets
 
