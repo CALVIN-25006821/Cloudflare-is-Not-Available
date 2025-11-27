@@ -89,6 +89,8 @@ If you want to use the system as a REST API for other apps.
 
 • streamlit run app.py
 
+Streamlit APP: https://hackathon112025-sxahghfka9xuedaeytk5hv.streamlit.app/ 
+
 ---
 
 🧩 Roles & Responsibilities
