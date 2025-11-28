@@ -10,7 +10,9 @@ Follow these instructions to get the project running on your local machine.
 ### 1. Prerequisites
 - Python 3.9 or higher
 - A Google Gemini API Key (Get one [here](https://aistudio.google.com/app/apikey))
+  
 <br>
+
 ### 2. Set up the Environment
 1.  *Clone/Download* this repository.
 3.  *Create a Virtual Environment* (recommended to keep dependencies isolated):
@@ -21,13 +23,17 @@ Follow these instructions to get the project running on your local machine.
 4.  *Install Dependencies*:
     bash
     pip install -r requirements.txt
+    
 <br>
+
 ### 3. Configure API Key
 1.  Create a file named .env in the root directory.
 2.  Add your Gemini API key to it:
     env
     GEMINI_API_KEY=your_actual_api_key_here
-<br> 
+    
+<br>
+
 ### 4. Train the Model (The "Math Brain")
 Before running the app, you need to generate the machine learning model.
 1.  Run the training script:
@@ -39,7 +45,9 @@ Before running the app, you need to generate the machine learning model.
     - Trains a Random Forest model.
     - Saves baseline_model_rf.pkl (The Model) and cleaned_data.csv (The Data).
     - You should see "✅ All done!" when finished.
+      
 <br>
+
 ### 5. Run the Application
 You have two options to run the system:
 #### Option A: Interactive Dashboard (Streamlit) - *RECOMMENDED*
@@ -67,7 +75,9 @@ If you want to use the system as a REST API for other apps.
 - *main.py*: The backend API (FastAPI).
 - *requirements.txt*: List of Python libraries needed.
 - *baseline_model_rf.pkl*: The saved "Math Brain" model.
+  
 <br>
+
 ▶️ How to Run
 • Run backend
 
@@ -199,6 +209,7 @@ Work Summary:
 • Prepare presentation
 
 <br>
+
 ---
 
 ## 🏛️ System Architecture
