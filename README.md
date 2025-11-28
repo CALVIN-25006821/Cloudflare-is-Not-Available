@@ -123,16 +123,16 @@ Work Summary:
 ### 2. Choo Kah Lok — LLM & Model Fusion Engineer 
 
 Deliverables:
-• NLP Pipeline & Text Features
-• Final Fusion Model (final_model.pkl)
-• SHAP Explainability Visuals
+- NLP Pipeline & Text Features
+- Final Fusion Model (final_model.pkl)
+- SHAP Explainability Visuals
 
 Work Summary:
-• Generated synthetic loan narratives for testing.
-• Extracted risk patterns using LLMs.
-• Merged text data with financial metrics.
-• Trained and tuned the final fusion model.
-• Visualized model decisions using SHAP.
+- Generated synthetic loan narratives for testing.
+- Extracted risk patterns using LLMs.
+- Merged text data with financial metrics.
+- Trained and tuned the final fusion model.
+- Visualized model decisions using SHAP.
 
 <br>
 
