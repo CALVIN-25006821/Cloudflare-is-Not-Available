@@ -81,13 +81,13 @@ If you want to use the system as a REST API for other apps.
 <br>
 
 ▶️ How to Run
-• Run backend
+- Run backend
 
-• uvicorn main:app --reload
+- uvicorn main:app --reload
 
-• Run Streamlit
+- Run Streamlit
 
-• streamlit run app.py
+- streamlit run app.py
 
 Streamlit APP: https://hackathon112025-sxahghfka9xuedaeytk5hv.streamlit.app/ 
 
@@ -100,84 +100,84 @@ Streamlit APP: https://hackathon112025-sxahghfka9xuedaeytk5hv.streamlit.app/
 ### 1. Calvin Kong Hao Xuan — Data Scientist
 
 Deliverables:
-• Cleaned structured dataset
-• Baseline ML models (Logistic Regression & Random Forest)
-• Google Colab notebook
+- Cleaned structured dataset
+- Baseline ML models (Logistic Regression & Random Forest)
+- Google Colab notebook
 
 <br>
 
 Work Summary:
-• Preprocess raw credit dataset
-• Feature selection (income, DTI, loan ratio, credit history, etc.)
-• Train baseline models
-• Evaluate using AUC & F1
-• Export cleaned_data.csv + models
+- Preprocess raw credit dataset
+- Feature selection (income, DTI, loan ratio, credit history, etc.)
+- Train baseline models
+- Evaluate using AUC & F1
+- Export cleaned_data.csv + models
 
 <br>
 
 ### 2. Choo Kah Lok — LLM Engineer
 
 Deliverables:
-• LLM prompts
-• Text feature extraction notebook
-• text_features.csv
+- LLM prompts
+- Text feature extraction notebook
+- text_features.csv
 
 <br>
 
 Work Summary:
-• Generate synthetic loan-purpose descriptions
-• Extract sentiment, risk patterns, urgency, financial behaviour
-• Convert text into numeric features
+- Generate synthetic loan-purpose descriptions
+- Extract sentiment, risk patterns, urgency, financial behaviour
+- Convert text into numeric features
 
 <br>
 
 ### 3. Leow Shen En — Fusion Model Engineer
 
 Deliverables:
-• Fusion dataset
-• SHAP explainability
-• final_model.pkl
+- Fusion dataset
+- SHAP explainability
+- final_model.pkl
 
 <br>
 
 Work Summary:
 
-• Merge structured + text features
-• Train fusion model
-• Hyperparameter tuning
-• Generate SHAP visuals + explanations
+- Merge structured + text features
+- Train fusion model
+- Hyperparameter tuning
+- Generate SHAP visuals + explanations
 
 <br>
 
 ### 4. Soo Kang Shi — Streamlit UI & Integration Developer
 
 Deliverables:
-• app.py (Streamlit app)
-• Automated PDF & Image Report Generator
+- app.py (Streamlit app)
+- Automated PDF & Image Report Generator
 
 <br>
 
 Work Summary:
-• Built a clean dashboard layout.
-• Integrated Hybrid AI models.
-• Implemented session state.
-• Developed automated report features.
+- Built a clean dashboard layout.
+- Integrated Hybrid AI models.
+- Implemented session state.
+- Developed automated report features.
 
 <br>
 
 ### 5. Priscilia Cheong Ee Cheng — Documentation Lead
 
 Deliverables:
-• Project report
-• Architecture diagrams
-• Presentation script
+- Project report
+- Architecture diagrams
+- Presentation script
 
 <br>
 
 Work Summary:
-• Create system diagrams
-• Write methodology & justification
-• Prepare presentation
+- Create system diagrams
+- Write methodology & justification
+- Prepare presentation
 
 <br>
 
@@ -185,18 +185,18 @@ Work Summary:
 
 ## 🏛️ System Architecture
 
-• User (Streamlit UI)
+- User (Streamlit UI)
 <br>
 
-• FastAPI Backend
+- FastAPI Backend
 
 -> Random Forest Model – Structured Risk
 
 -> LLM (Gemini/OpenAI) – Text Analysis (Behavioural Risk)
 
-• Fusion Layer – 70% ML + 30% LLM
-
-• Final Risk Score + Explanation
+- Fusion Layer – 70% ML + 30% LLM
+  
+- Final Risk Score + Explanation
 
 <br>
 
@@ -204,19 +204,19 @@ Work Summary:
 
 #### Structured Risk (RF Model Input)
 
-• Age
+- Age
 
-• Income
+- Income
 
-• Loan amount
+- Loan amount
 
-• Loan term
+- Loan term
 
-• DTI
+- DTI
 
-• Credit history
+- Credit history
 
-• Dependents
+- Dependents
 
 
 Output: Probability of default (0–1)
@@ -225,17 +225,17 @@ Output: Probability of default (0–1)
 
 #### Text Risk (LLM Input)
 
-• Analyzes loan-purpose description for:
+- Analyzes loan-purpose description for:
 
-• Sentiment
+- Sentiment
 
-• Responsibility
+- Responsibility
 
-• Urgency / stress
+- Urgency / stress
 
-• Red flags
+- Red flags
 
-• Clarity
+- Clarity
 
 
 Output: Text risk score (0–1)
@@ -244,13 +244,13 @@ Output: Text risk score (0–1)
 
 #### Final Fusion Formula
 
-final_score = (0.7 × structured_risk) + (0.3 × text_risk)
+- final_score = (0.7 × structured_risk) + (0.3 × text_risk)
 
-Decision rule:
+- Decision rule:
 
-Score > 0.5 → REJECT
+- Score > 0.5 → REJECT
 
-Score ≤ 0.5 → APPROVE
+- Score ≤ 0.5 → APPROVE
 
 <br>
 ---
@@ -259,63 +259,63 @@ Score ≤ 0.5 → APPROVE
 
 ### Step 1 — Data Generation & Cleaning
 
-• Synthetic Malaysian credit dataset
+- Synthetic Malaysian credit dataset
 
-• Feature engineering
+- Feature engineering
 
-• Missing value handling
+- Missing value handling
 <br>
 
 
 ### Step 2 — Baseline ML
 
-• Train LR + RF
+- Train LR + RF
 
-• Evaluate
+- Evaluate
 
-• Export .pkl models
+- Export .pkl models
 <br>
 
 
 ### Step 3 — LLM Text Extraction 
 
-• Gemini prompts
+- Gemini prompts
 
-• Extract text-based behavioural features
+- Extract text-based behavioural features
 
-• Generate text_features.csv
+- Generate text_features.csv
 <br>
 
 
 ### Step 4 — Fusion Model 
 
-• Merge datasets
+- Merge datasets
 
-• Train final model
+- Train final model
 
-• SHAP interpretability
+- SHAP interpretability
 <br>
 
 
 ### Step 5 — FastAPI Backend
 
-• Endpoint: /predict
+- Endpoint: /predict
 
-• Loads RF model
+- Loads RF model
 
-• Calls LLM
+- Calls LLM
 
-• Returns final score + explanation
+- Returns final score + explanation
 <br>
 
 
 ### Step 6 — Streamlit Dashboard
 
-• User inputs
+- User inputs
 
-• Calls backend
+- Calls backend
 
-• Displays prediction + charts
+- Displays prediction + charts
 
 
 <br>
