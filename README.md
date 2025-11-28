@@ -143,7 +143,7 @@ Work Summary:
 
 ---
 
-3. Soo Kang Shi — Fusion Model Engineer
+3. Leow Shen En — Fusion Model Engineer
 
 Deliverables:
 
@@ -167,23 +167,25 @@ Work Summary:
 
 ---
 
-4. Leow Shen En — Streamlit UI Developer
+4. Soo Kang Shi — Streamlit UI & Integration Developer
 
 Deliverables:
 
 • app.py (Streamlit app)
 
+• Automated PDF & Image Report Generator
+
 <br>
 
 Work Summary:
 
-• Build clean input form
+• Built a clean dashboard layout.
 
-• Connect to prediction backend
+• Integrated Hybrid AI models.
 
-• Show final score & explanation
+• Implemented session state.
 
-• Plot feature importance
+• Developed automated report features.
 
 ---
 
