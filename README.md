@@ -9,12 +9,14 @@ Produce by the team of Cloudflare-Is-Not-Available, this project uses a hybrid a
 Follow these instructions to get the project running on your local machine.
 
 ### 1. Prerequisites
+
 - Python 3.9 or higher
 - A Google Gemini API Key (Get one [here](https://aistudio.google.com/app/apikey))
   
 <br>
 
 ### 2. Set up the Environment
+
 1.  *Clone/Download* this repository.
 2.  *Create a Virtual Environment* (recommended to keep dependencies isolated):
     bash
@@ -28,6 +30,7 @@ Follow these instructions to get the project running on your local machine.
 <br>
 
 ### 3. Configure API Key
+
 1.  Create a file named .env in the root directory.
 2.  Add your Gemini API key to it:
     env
@@ -36,6 +39,7 @@ Follow these instructions to get the project running on your local machine.
 <br>
 
 ### 4. Train the Model (The "Math Brain")
+
 Before running the app, you need to generate the machine learning model.
 1.  Run the training script:
     bash
@@ -50,8 +54,11 @@ Before running the app, you need to generate the machine learning model.
 <br>
 
 ### 5. Run the Application
+
 You have two options to run the system:
+
 #### Option A: Interactive Dashboard (Streamlit) - *RECOMMENDED*
+
 This is the user-friendly web interface.
 1.  Run the app:
     bash
@@ -60,6 +67,7 @@ This is the user-friendly web interface.
 3.  Enter applicant details and a story to see the AI assessment.
 
 #### Option B: Backend API (FastAPI)
+
 If you want to use the system as a REST API for other apps.
 1.  Start the server:
     bash
@@ -69,7 +77,7 @@ If you want to use the system as a REST API for other apps.
 <br>
 
 ---
-
+        
 ## 📂 Project Structure
 
 - *app.py*                : The frontend dashboard (Streamlit).
@@ -317,45 +325,45 @@ Output: Text risk score (0–1)
 
 ### 📁 data/ – Contains datasets
 
-📄 cleaned_data.csv – Preprocessed dataset
+  📄 cleaned_data.csv – Preprocessed dataset
 
-📄 text_features.csv – Extracted text features
+  📄 text_features.csv – Extracted text features
 
 <br>
 
 ### 📁 models/ – Saved machine learning models
 
-📄 baseline_model_lr.pkl – Logistic Regression baseline
+  📄 baseline_model_lr.pkl – Logistic Regression baseline
 
-📄 baseline_model_rf.pkl – Random Forest baseline
+  📄 baseline_model_rf.pkl – Random Forest baseline
 
-📄 final_model.pkl – Final tuned model
+  📄 final_model.pkl – Final tuned model
 
 <br>
 
 ### 📁 backend/ – FastAPI backend code
 
-📄 main.py – API entry point
+  📄 main.py – API entry point
 
-📄 risk_engine.py – Core risk assessment logic
+  📄 risk_engine.py – Core risk assessment logic
 
 <br>
 
 ### 📁 ui/ – User interface
 
-📄 app.py – Frontend (Streamlit/FastAPI)
+  📄 app.py – Frontend (Streamlit/FastAPI)
 
 <br>
 
 ### 📁 notebooks/ – Jupyter notebooks for experimentation
 
-📄 structured_data.ipynb – Structured data analysis
+  📄 structured_data.ipynb – Structured data analysis
 
-📄 text_analysis.ipynb – NLP/text feature analysis
+  📄 text_analysis.ipynb – NLP/text feature analysis
 
-📄 fusion_model.ipynb – ML + LLM fusion experiments
+  📄 fusion_model.ipynb – ML + LLM fusion experiments
 
-📄 README.md – Project documentation
+  📄 README.md – Project documentation
 
 <br>
 
