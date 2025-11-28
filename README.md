@@ -253,6 +253,7 @@ Output: Text risk score (0–1)
 - Score ≤ 0.5 → APPROVE
 
 <br>
+
 ---
 
 ## 🔄 Project Workflow
@@ -264,6 +265,7 @@ Output: Text risk score (0–1)
 - Feature engineering
 
 - Missing value handling
+  
 <br>
 
 
@@ -274,6 +276,7 @@ Output: Text risk score (0–1)
 - Evaluate
 
 - Export .pkl models
+  
 <br>
 
 
@@ -284,6 +287,7 @@ Output: Text risk score (0–1)
 - Extract text-based behavioural features
 
 - Generate text_features.csv
+  
 <br>
 
 
@@ -294,6 +298,7 @@ Output: Text risk score (0–1)
 - Train final model
 
 - SHAP interpretability
+  
 <br>
 
 
@@ -306,6 +311,7 @@ Output: Text risk score (0–1)
 - Calls LLM
 
 - Returns final score + explanation
+  
 <br>
 
 
@@ -317,8 +323,8 @@ Output: Text risk score (0–1)
 
 - Displays prediction + charts
 
-
 <br>
+
 ---
 
 ## 📂 Folder Structure
@@ -329,6 +335,7 @@ Output: Text risk score (0–1)
 📄 cleaned_data.csv – Preprocessed dataset
 
 📄 text_features.csv – Extracted text features
+
 <br>
 
 ### 📁 models/ – Saved machine learning models
@@ -338,6 +345,7 @@ Output: Text risk score (0–1)
 📄 baseline_model_rf.pkl – Random Forest baseline
 
 📄 final_model.pkl – Final tuned model
+
 <br>
 
 ### 📁 backend/ – FastAPI backend code
@@ -345,11 +353,13 @@ Output: Text risk score (0–1)
 📄 main.py – API entry point
 
 📄 risk_engine.py – Core risk assessment logic
+
 <br>
 
 ### 📁 ui/ – User interface
 
 📄 app.py – Frontend (Streamlit/FastAPI)
+
 <br>
 
 ### 📁 notebooks/ – Jupyter notebooks for experimentation
@@ -361,20 +371,21 @@ Output: Text risk score (0–1)
 📄 fusion_model.ipynb – ML + LLM fusion experiments
 
 📄 README.md – Project documentation
+
 <br>
 
 ---
 
 ## ⭐ Project Highlights
 
-• Hybrid ML + LLM risk assessment
+- Hybrid ML + LLM risk assessment
 
-• Fairer and more explainable than traditional scoring
+- Fairer and more explainable than traditional scoring
 
-• Malaysian-style synthetic dataset
+- Malaysian-style synthetic dataset
 
-• SHAP interpretability
+- SHAP interpretability
 
-• Real-time dashboard
+- Real-time dashboard
 
-• Modular design for easy extension
+- Modular design for easy extension
