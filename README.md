@@ -2,6 +2,7 @@
 Produce by the team of Cloudflare-Is-Not-Available, this project uses a hybrid approach to assess credit risk, combining a *Random Forest model* (Math Brain) for structured financial data and *Google Gemini* (Text Brain) for analyzing unstructured user stories.
 
 <br>
+
 ---
 
 ## 🚀 Step-by-Step Setup Guide
@@ -66,6 +67,7 @@ If you want to use the system as a REST API for other apps.
 2.  Access the API documentation at http://127.0.0.1:8000/docs.
 
 <br>
+
 ---
 
 ## 📂 Project Structure
@@ -90,6 +92,7 @@ If you want to use the system as a REST API for other apps.
 Streamlit APP: https://hackathon112025-sxahghfka9xuedaeytk5hv.streamlit.app/ 
 
 <br>
+
 ---
 
 ## 🧩 Roles & Responsibilities
