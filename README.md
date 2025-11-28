@@ -71,6 +71,7 @@ If you want to use the system as a REST API for other apps.
 ---
 
 ## 📂 Project Structure
+
 - *app.py*                : The frontend dashboard (Streamlit).
 - *risk_engine.py*        : The core logic combining Math + Text models.
 - *train_model.py*        : Generates data and trains the Random Forest model.
@@ -102,8 +103,6 @@ Deliverables:
 - Baseline ML models (Logistic Regression & Random Forest)
 - Google Colab notebook
 
-
-
 Work Summary:
 - Preprocess raw credit dataset
 - Feature selection (income, DTI, loan ratio, credit history, etc.)
@@ -120,8 +119,6 @@ Deliverables:
 - Text feature extraction notebook
 - text_features.csv
 
-
-
 Work Summary:
 - Generate synthetic loan-purpose descriptions
 - Extract sentiment, risk patterns, urgency, financial behaviour
@@ -136,10 +133,7 @@ Deliverables:
 - SHAP explainability
 - final_model.pkl
 
-<br>
-
 Work Summary:
-
 - Merge structured + text features
 - Train fusion model
 - Hyperparameter tuning
@@ -152,8 +146,6 @@ Work Summary:
 Deliverables:
 - app.py (Streamlit app)
 - Automated PDF & Image Report Generator
-
-<br>
 
 Work Summary:
 - Built a clean dashboard layout.
@@ -170,8 +162,6 @@ Deliverables:
 - Architecture diagrams
 - Presentation script
 
-<br>
-
 Work Summary:
 - Create system diagrams
 - Write methodology & justification
@@ -184,12 +174,9 @@ Work Summary:
 ## 🏛️ System Architecture
 
 - User (Streamlit UI)
-<br>
 
 - FastAPI Backend
-
 -> Random Forest Model – Structured Risk
-
 -> LLM (Gemini/OpenAI) – Text Analysis (Behavioural Risk)
 
 - Fusion Layer – 70% ML + 30% LLM
