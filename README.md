@@ -325,45 +325,45 @@ Output: Text risk score (0–1)
 
 ### 📁 data/ – Contains datasets
 
-  📄 cleaned_data.csv – Preprocessed dataset
+    📄 cleaned_data.csv – Preprocessed dataset
 
-  📄 text_features.csv – Extracted text features
+    📄 text_features.csv – Extracted text features
 
 <br>
 
 ### 📁 models/ – Saved machine learning models
 
-  📄 baseline_model_lr.pkl – Logistic Regression baseline
+    📄 baseline_model_lr.pkl – Logistic Regression baseline
 
-  📄 baseline_model_rf.pkl – Random Forest baseline
+    📄 baseline_model_rf.pkl – Random Forest baseline
 
-  📄 final_model.pkl – Final tuned model
+    📄 final_model.pkl – Final tuned model
 
 <br>
 
 ### 📁 backend/ – FastAPI backend code
 
-  📄 main.py – API entry point
+    📄 main.py – API entry point
 
-  📄 risk_engine.py – Core risk assessment logic
+    📄 risk_engine.py – Core risk assessment logic
 
 <br>
 
 ### 📁 ui/ – User interface
 
-  📄 app.py – Frontend (Streamlit/FastAPI)
+    📄 app.py – Frontend (Streamlit/FastAPI)
 
 <br>
 
 ### 📁 notebooks/ – Jupyter notebooks for experimentation
 
-  📄 structured_data.ipynb – Structured data analysis
+    📄 structured_data.ipynb – Structured data analysis
 
-  📄 text_analysis.ipynb – NLP/text feature analysis
+    📄 text_analysis.ipynb – NLP/text feature analysis
 
-  📄 fusion_model.ipynb – ML + LLM fusion experiments
+    📄 fusion_model.ipynb – ML + LLM fusion experiments
 
-  📄 README.md – Project documentation
+    📄 README.md – Project documentation
 
 <br>
 
