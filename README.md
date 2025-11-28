@@ -100,25 +100,17 @@ Streamlit APP: https://hackathon112025-sxahghfka9xuedaeytk5hv.streamlit.app/
 ### 1. Calvin Kong Hao Xuan — Data Scientist
 
 Deliverables:
-
 • Cleaned structured dataset
-
 • Baseline ML models (Logistic Regression & Random Forest)
-
 • Google Colab notebook
 
 <br>
 
 Work Summary:
-
 • Preprocess raw credit dataset
-
 • Feature selection (income, DTI, loan ratio, credit history, etc.)
-
 • Train baseline models
-
 • Evaluate using AUC & F1
-
 • Export cleaned_data.csv + models
 
 <br>
@@ -126,21 +118,15 @@ Work Summary:
 ### 2. Choo Kah Lok — LLM Engineer
 
 Deliverables:
-
 • LLM prompts
-
 • Text feature extraction notebook
-
 • text_features.csv
 
 <br>
 
 Work Summary:
-
 • Generate synthetic loan-purpose descriptions
-
 • Extract sentiment, risk patterns, urgency, financial behaviour
-
 • Convert text into numeric features
 
 <br>
@@ -148,11 +134,8 @@ Work Summary:
 ### 3. Leow Shen En — Fusion Model Engineer
 
 Deliverables:
-
 • Fusion dataset
-
 • SHAP explainability
-
 • final_model.pkl
 
 <br>
@@ -160,11 +143,8 @@ Deliverables:
 Work Summary:
 
 • Merge structured + text features
-
 • Train fusion model
-
 • Hyperparameter tuning
-
 • Generate SHAP visuals + explanations
 
 <br>
@@ -172,21 +152,15 @@ Work Summary:
 ### 4. Soo Kang Shi — Streamlit UI & Integration Developer
 
 Deliverables:
-
 • app.py (Streamlit app)
-
 • Automated PDF & Image Report Generator
 
 <br>
 
 Work Summary:
-
 • Built a clean dashboard layout.
-
 • Integrated Hybrid AI models.
-
 • Implemented session state.
-
 • Developed automated report features.
 
 <br>
@@ -194,21 +168,15 @@ Work Summary:
 ### 5. Priscilia Cheong Ee Cheng — Documentation Lead
 
 Deliverables:
-
 • Project report
-
 • Architecture diagrams
-
 • Presentation script
 
 <br>
 
 Work Summary:
-
 • Create system diagrams
-
 • Write methodology & justification
-
 • Prepare presentation
 
 <br>
@@ -234,7 +202,7 @@ Work Summary:
 
 ### 🧠 Fusion Logic
 
-Structured Risk (RF Model Input)
+#### Structured Risk (RF Model Input)
 
 • Age
 
