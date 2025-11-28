@@ -120,32 +120,31 @@ Work Summary:
 
 <br>
 
-### 2. Choo Kah Lok — LLM Engineer
+### 2. Choo Kah Lok — LLM & Model Fusion Engineer 
 
 Deliverables:
-- LLM prompts
-- Text feature extraction notebook
-- text_features.csv
+• NLP Pipeline & Text Features
+• Final Fusion Model (final_model.pkl)
+• SHAP Explainability Visuals
 
 Work Summary:
-- Generated synthetic loan-purpose descriptions
-- Extracted sentiment, risk patterns, urgency, financial behaviour
-- Converted text into numeric features
+• Generated synthetic loan narratives for testing.
+• Extracted risk patterns using LLMs.
+• Merged text data with financial metrics.
+• Trained and tuned the final fusion model.
+• Visualized model decisions using SHAP.
 
 <br>
 
-### 3. Leow Shen En — Fusion Model Engineer
-
+### 3. Leow Shen En — Prototype Developer
 Deliverables:
-- Fusion dataset
-- SHAP explainability
-- final_model.pkl
+- Initial V1 App Structure
+- Input Logic Configuration
 
 Work Summary:
-- Merged structured + text features
-- Trained fusion model
-- Hyperparameter tuning
-- Generated SHAP visuals + explanations
+- Initialized the project environment.
+- Built the functional V1 application skeleton.
+- Defined the data input requirements.
 
 <br>
 
@@ -156,10 +155,10 @@ Deliverables:
 - Automated PDF & image report generator
 
 Work Summary:
-- Built a clean dashboard layout
+- Built a responsive, no-scroll dashboard layout
 - Integrated Hybrid AI models
-- Implemented session state
-- Developed automated report features
+- Designed the user experience (UX)
+- Developed report generation features
 
 <br>
 
