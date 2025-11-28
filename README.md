@@ -112,11 +112,11 @@ Deliverables:
 - Google Colab notebook
 
 Work Summary:
-- Preprocessed raw credit dataset
-- Featured selection (income, DTI, loan ratio, credit history, etc.)
-- Trained baseline models
-- Evaluated using AUC & F1
-- Exported cleaned_data.csv + models
+- Preprocessed raw credit dataset.
+- Featured selection (income, DTI, loan ratio, credit history, etc.).
+- Trained baseline models.
+- Evaluated using AUC & F1.
+- Exported cleaned_data.csv + models.
 
 <br>
 
@@ -144,21 +144,21 @@ Deliverables:
 Work Summary:
 - Initialized the project environment.
 - Built the functional V1 application skeleton.
-- Defined the data input requirements.
+- Defined the core data input requirements.
 
 <br>
 
 ### 4. Soo Kang Shi — Streamlit UI & Integration Developer
 
 Deliverables:
-- app.py (Streamlit app)
-- Automated PDF & image report generator
+- Production dashboard (app.py)
+- Automated report generator
 
 Work Summary:
-- Built a responsive, no-scroll dashboard layout
-- Integrated Hybrid AI models
-- Designed the user experience (UX)
-- Developed report generation features
+- Integrated Hybrid AI models.
+- Implemented session state for history tracking.
+- Engineered responsive, no-scroll dashboard layout.
+- Developed automated PDF and PNG export features.
 
 <br>
 
@@ -170,9 +170,9 @@ Deliverables:
 - Presentation script
 
 Work Summary:
-- Created system diagrams
-- Wrote methodology & justification
-- Prepared presentation
+- Created system diagrams.
+- Wrote methodology & justification.
+- Prepared presentation.
 
 <br>
 
