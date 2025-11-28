@@ -16,12 +16,12 @@ Follow these instructions to get the project running on your local machine.
 
 ### 2. Set up the Environment
 1.  *Clone/Download* this repository.
-3.  *Create a Virtual Environment* (recommended to keep dependencies isolated):
+2.  *Create a Virtual Environment* (recommended to keep dependencies isolated):
     bash
     python3 -m venv .venv
     source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
     
-4.  *Install Dependencies*:
+3.  *Install Dependencies*:
     bash
     pip install -r requirements.txt
     
