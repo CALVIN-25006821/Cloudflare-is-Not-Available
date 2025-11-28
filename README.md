@@ -1,11 +1,9 @@
-# Cloudflare-is-Not-Available
-
 # Hybrid AI Credit Scoring System
+Produce by the team of Cloudflare-Is-Not-Available, this project uses a hybrid approach to assess credit risk, combining a *Random Forest model* (Math Brain) for structured financial data and *Google Gemini* (Text Brain) for analyzing unstructured user stories.
 
-This project uses a hybrid approach to assess credit risk, combining a *Random Forest model* (Math Brain) for structured financial data and *Google Gemini* (Text Brain) for analyzing unstructured user stories.
+
 
 ## 🚀 Step-by-Step Setup Guide
-
 Follow these instructions to get the project running on your local machine.
 
 ### 1. Prerequisites
@@ -13,30 +11,23 @@ Follow these instructions to get the project running on your local machine.
 - A Google Gemini API Key (Get one [here](https://aistudio.google.com/app/apikey))
 
 ### 2. Set up the Environment
-
 1.  *Clone/Download* this repository.
 2.  *Create a Virtual Environment* (recommended to keep dependencies isolated):
     bash
     python3 -m venv .venv
     source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
-    
 3.  *Install Dependencies*:
     bash
     pip install -r requirements.txt
     
-
 ### 3. Configure API Key
-
 1.  Create a file named .env in the root directory.
 2.  Add your Gemini API key to it:
     env
     GEMINI_API_KEY=your_actual_api_key_here
     
-
 ### 4. Train the Model (The "Math Brain")
-
 Before running the app, you need to generate the machine learning model.
-
 1.  Run the training script:
     bash
     python train_model.py
@@ -48,30 +39,25 @@ Before running the app, you need to generate the machine learning model.
     - You should see "✅ All done!" when finished.
 
 ### 5. Run the Application
-
 You have two options to run the system:
-
 #### Option A: Interactive Dashboard (Streamlit) - *RECOMMENDED*
 This is the user-friendly web interface.
-
 1.  Run the app:
     bash
     ./.venv/bin/streamlit run app.py
-    
 2.  Open your browser at the URL shown (usually http://localhost:8501).
 3.  Enter applicant details and a story to see the AI assessment.
 
 #### Option B: Backend API (FastAPI)
 If you want to use the system as a REST API for other apps.
-
 1.  Start the server:
     bash
     uvicorn main:app --reload
-    
 2.  Access the API documentation at http://127.0.0.1:8000/docs.
 
-## 📂 Project Structure
 
+
+## 📂 Project Structure
 - *app.py*: The frontend dashboard (Streamlit).
 - *risk_engine.py*: The core logic combining Math + Text models.
 - *train_model.py*: Generates data and trains the Random Forest model.
@@ -80,7 +66,6 @@ If you want to use the system as a REST API for other apps.
 - *baseline_model_rf.pkl*: The saved "Math Brain" model.
 
 ▶️ How to Run
-
 • Run backend
 
 • uvicorn main:app --reload
