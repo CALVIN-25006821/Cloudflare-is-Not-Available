@@ -71,22 +71,20 @@ If you want to use the system as a REST API for other apps.
 ---
 
 ## 📂 Project Structure
-- *app.py*: The frontend dashboard (Streamlit).
-- *risk_engine.py*: The core logic combining Math + Text models.
-- *train_model.py*: Generates data and trains the Random Forest model.
-- *main.py*: The backend API (FastAPI).
-- *requirements.txt*: List of Python libraries needed.
-- *baseline_model_rf.pkl*: The saved "Math Brain" model.
+- *app.py*                : The frontend dashboard (Streamlit).
+- *risk_engine.py*        : The core logic combining Math + Text models.
+- *train_model.py*        : Generates data and trains the Random Forest model.
+- *main.py*               : The backend API (FastAPI).
+- *requirements.txt*      : List of Python libraries needed.
+- *baseline_model_rf.pkl* : The saved "Math Brain" model.
   
 <br>
 
 ▶️ How to Run
+
 - Run backend
-
 - uvicorn main:app --reload
-
 - Run Streamlit
-
 - streamlit run app.py
 
 Streamlit APP: https://hackathon112025-sxahghfka9xuedaeytk5hv.streamlit.app/ 
@@ -104,7 +102,7 @@ Deliverables:
 - Baseline ML models (Logistic Regression & Random Forest)
 - Google Colab notebook
 
-<br>
+
 
 Work Summary:
 - Preprocess raw credit dataset
@@ -122,7 +120,7 @@ Deliverables:
 - Text feature extraction notebook
 - text_features.csv
 
-<br>
+
 
 Work Summary:
 - Generate synthetic loan-purpose descriptions
