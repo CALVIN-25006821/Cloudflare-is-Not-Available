@@ -112,11 +112,11 @@ Deliverables:
 - Google Colab notebook
 
 Work Summary:
-- Preprocess raw credit dataset
-- Feature selection (income, DTI, loan ratio, credit history, etc.)
-- Train baseline models
-- Evaluate using AUC & F1
-- Export cleaned_data.csv + models
+- Preprocessed raw credit dataset
+- Featured selection (income, DTI, loan ratio, credit history, etc.)
+- Trained baseline models
+- Evaluated using AUC & F1
+- Exported cleaned_data.csv + models
 
 <br>
 
@@ -128,9 +128,9 @@ Deliverables:
 - text_features.csv
 
 Work Summary:
-- Generate synthetic loan-purpose descriptions
-- Extract sentiment, risk patterns, urgency, financial behaviour
-- Convert text into numeric features
+- Generated synthetic loan-purpose descriptions
+- Extracted sentiment, risk patterns, urgency, financial behaviour
+- Converted text into numeric features
 
 <br>
 
@@ -142,10 +142,10 @@ Deliverables:
 - final_model.pkl
 
 Work Summary:
-- Merge structured + text features
-- Train fusion model
+- Merged structured + text features
+- Trained fusion model
 - Hyperparameter tuning
-- Generate SHAP visuals + explanations
+- Generated SHAP visuals + explanations
 
 <br>
 
@@ -153,13 +153,13 @@ Work Summary:
 
 Deliverables:
 - app.py (Streamlit app)
-- Automated PDF & Image Report Generator
+- Automated PDF & image report generator
 
 Work Summary:
-- Built a clean dashboard layout.
-- Integrated Hybrid AI models.
-- Implemented session state.
-- Developed automated report features.
+- Built a clean dashboard layout
+- Integrated Hybrid AI models
+- Implemented session state
+- Developed automated report features
 
 <br>
 
@@ -171,9 +171,9 @@ Deliverables:
 - Presentation script
 
 Work Summary:
-- Create system diagrams
-- Write methodology & justification
-- Prepare presentation
+- Created system diagrams
+- Wrote methodology & justification
+- Prepared presentation
 
 <br>
 
