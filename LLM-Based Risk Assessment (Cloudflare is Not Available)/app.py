@@ -100,17 +100,20 @@ def create_summary_image(data, result, label):
         status_bg = "#e8f5e9"
 
     # --- 3. FONT LOADING ---
-    # Using basic fonts for reliability, can be replaced with custom paths
+    # We point directly to the files we uploaded to the folder
     try:
-        f_title = ImageFont.truetype("arialbd.ttf", 28)
-        f_header_big = ImageFont.truetype("arialbd.ttf", 18)
-        f_header_small = ImageFont.truetype("arial.ttf", 14)
-        f_text = ImageFont.truetype("arial.ttf", 13)
-        f_text_bold = ImageFont.truetype("arialbd.ttf", 13)
-        f_score_big = ImageFont.truetype("arialbd.ttf", 48)
-        f_score_small = ImageFont.truetype("arialbd.ttf", 16)
+        # Use the bundled fonts (guaranteed to work on Streamlit Cloud)
+        f_title = ImageFont.truetype("Roboto-Bold.ttf", 28)
+        f_header_big = ImageFont.truetype("Roboto-Bold.ttf", 18)
+        f_header_small = ImageFont.truetype("Roboto-Regular.ttf", 14)
+        f_text = ImageFont.truetype("Roboto-Regular.ttf", 13)
+        f_text_bold = ImageFont.truetype("Roboto-Bold.ttf", 13)
+        f_score_big = ImageFont.truetype("Roboto-Bold.ttf", 48)
+        f_score_small = ImageFont.truetype("Roboto-Bold.ttf", 16)
+
     except OSError:
-        # Fallback if Arial isn't present on the system
+        # Fallback only if the files are physically missing from the folder
+        print("Error: Font files not found. Using default.")
         f_title = ImageFont.load_default()
         f_header_big = ImageFont.load_default()
         f_header_small = ImageFont.load_default()
@@ -123,7 +126,7 @@ def create_summary_image(data, result, label):
     # --- 4. MAIN HEADER SECTION (Top Strip) ---
     d.rectangle([(0, 0), (W, 15)], fill=theme_color)
     d.text((30, 35), "DeepCheck Credit Risk Assessment", fill=text_main_color, font=f_title)
-    d.text((30, 70), f"Case ID: {label} | Date: {datetime.date.today()}", fill=text_header_color, font=f_header_small)
+    d.text((30, 70), f"Case ID: {label} | Date: {datetime.date.today().strftime('%d-%m-%Y')}", fill=text_header_color, font=f_header_small)
     
     # Confidence Badge
     conf = result.get('Text_Analysis',{}).get('confidence','N/A')
@@ -315,7 +318,7 @@ def create_pdf_report(data, result, label, fin_text):
     pdf.set_font("Arial", 'B', 20)
     pdf.cell(0, 10, "Credit Risk Assessment Report", ln=True, align='L')
     pdf.set_font("Arial", 'I', 10)
-    pdf.cell(0, 10, f"Generated via Cloudflare-Is-Not-Available AI | Date: {datetime.date.today()}", ln=True, align='L')
+    pdf.cell(0, 10, f"Generated via Cloudflare-Is-Not-Available AI | Date: {datetime.date.today().strftime('%d-%m-%Y')}", ln=True, align='L')
     pdf.ln(5)
 
     # 1. APPLICANT DATA
@@ -575,4 +578,5 @@ if st.session_state.active_index != -1:
 else:
     with right_col:
         st.markdown("### ")
+
         st.info("👈 Enter applicant details to start.")
