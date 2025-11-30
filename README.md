@@ -1,5 +1,5 @@
 # Hybrid AI Credit Scoring System
-Produce by the team of Cloudflare-Is-Not-Available, this project uses a hybrid approach to assess credit risk, combining a *Random Forest model* (Math Brain) for structured financial data and *Google Gemini* (Text Brain) for analyzing unstructured user stories.
+Produced by the team of Cloudflare-Is-Not-Available, this project uses a hybrid approach to assess credit risk, combining a *Random Forest model* (Math Brain) for structured financial data and *Google Gemini* (Text Brain) for analyzing unstructured user stories.
 
 <br>
 
@@ -260,7 +260,6 @@ Output: Text risk score (0–1)
   
 <br>
 
-
 ### Step 2 — Baseline ML
 
 - Train LR + RF
@@ -270,7 +269,6 @@ Output: Text risk score (0–1)
 - Export .pkl models
   
 <br>
-
 
 ### Step 3 — LLM Text Extraction 
 
@@ -282,7 +280,6 @@ Output: Text risk score (0–1)
   
 <br>
 
-
 ### Step 4 — Fusion Model 
 
 - Merge datasets
@@ -292,7 +289,6 @@ Output: Text risk score (0–1)
 - SHAP interpretability
   
 <br>
-
 
 ### Step 5 — FastAPI Backend
 
@@ -305,7 +301,6 @@ Output: Text risk score (0–1)
 - Returns final score + explanation
   
 <br>
-
 
 ### Step 6 — Streamlit Dashboard
 
@@ -320,7 +315,6 @@ Output: Text risk score (0–1)
 ---
 
 ## 📂 Folder Structure
-
 
 ### 📁 data/ – Contains datasets
 
